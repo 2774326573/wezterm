@@ -78,6 +78,7 @@ function BackDrops:_create_opts()
       {
          source = { File = self.images[self.current_idx] },
          horizontal_align = 'Center',
+         vertical_align = 'Middle',
       },
       {
          source = { Color = colors.background },

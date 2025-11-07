@@ -32,7 +32,7 @@
 ### 使用概览
 
 1. **同步配置**：克隆到 `~/.config/wezterm`（Windows 会映射到 `C:\Users\<you>\.config\wezterm`）。如已有配置请先备份。
-2. **默认启动 WSL**：Windows 下自动探测首个可用的 WSL 发行版并作为默认 Shell。若需指定，启动前设置 `WEZTERM_WSL_DISTRO=<发行版名称>` 即可。
+2. **默认启动 PowerShell**：Windows 上仍以 `pwsh` 启动，但会自动探测 WSL 发行版并在启动菜单/快捷键中提供入口。若需指定 WSL 发行版，可在启动前设置 `WEZTERM_WSL_DISTRO=<发行版名称>`。
 3. **背景与透明度**：默认 85% 透明、无边框，背景图库位于 `./backdrops`，可用快捷键快速切换或聚焦背景。
 4. **窗口尺寸**：启动后自动缩放至当前屏幕的 4/5 并居中，必要时使用快捷键最大化。
 5. **常用自定义入口**：
@@ -79,7 +79,8 @@
 ### 所有快捷键
 
 - Mac: `SUPER` = Command，`SUPER_REV` = Command+Ctrl
-- Windows/Linux: `SUPER` = Alt，`SUPER_REV` = Alt+Ctrl（用于规避系统快捷键）
+- Windows: `SUPER` = Win 键，`SUPER_REV` = Win+Ctrl
+- Linux: `SUPER` = Alt，`SUPER_REV` = Alt+Ctrl（用于规避系统快捷键）
 - 通用：`LEADER` = `SUPER_REV` + `Space`
 
 #### 杂项
@@ -211,3 +212,5 @@
 - https://github.com/catppuccin/wezterm
 - https://github.com/wez/wezterm/discussions/628#discussioncomment-1874614
 - https://github.com/wez/wezterm/discussions/628#discussioncomment-5942139
+
+

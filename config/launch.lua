@@ -42,7 +42,7 @@ if platform.is_win then
    local home_dir = (wezterm.home_dir or os.getenv('USERPROFILE') or 'C:\\Users\\Public')
    local git_bash = string.format('%s\\scoop\\apps\\git\\current\\bin\\bash.exe', home_dir)
 
-   options.default_prog = wsl_prog or { 'pwsh', '-NoLogo' }
+   options.default_prog = { 'pwsh', '-NoLogo' }
 
    local function add_menu(entry)
       table.insert(options.launch_menu, entry)
